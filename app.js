@@ -11,7 +11,9 @@ button.addEventListener('click',() => {
 
 
 function change(joke) {
-  jokeContainer.classList.remove('hide') 
+  jokeContainer.classList.remove('hide')
   jokeContainer.innerHTML =
-  `<h3>${joke.value}</h3>`;
+  `<h3>${joke.value}</h3>
+  <img src="kick.png" alt="">
+  `;
 }

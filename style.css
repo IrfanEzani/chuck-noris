@@ -48,23 +48,61 @@ header button {
   border: none;
   border-radius: 10px;
   border: 2px solid white;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Lato';
   text-transform: lowercase;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: #e74700;
+  box-shadow: -1px 1px 0px 0px black;
+  transition: 0.5s ease all;
+}
+
+header button:hover {
+  background: white;
+  color: #e74700;
 }
 
 .joke-container {
-  background: black;
+  background: white;
   color: rgb(233, 97, 20);
   min-height: 100vh;
   width: 50vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
   line-height: 30px;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
+.joke-container h3 {
+  padding: 0 1.5rem;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.joke-container img {
+  margin: 1em 0;
+  height: 200px;
+  width: auto;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 .hide {
   display: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
