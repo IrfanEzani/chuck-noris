@@ -79,9 +79,9 @@ header button:hover {
   animation-duration: 1s;
 }
 
-
 .joke-container h3 {
   padding: 0 1.5rem;
+  font-size: 2em;
   animation-name: fade;
   animation-duration: 1s;
 }
